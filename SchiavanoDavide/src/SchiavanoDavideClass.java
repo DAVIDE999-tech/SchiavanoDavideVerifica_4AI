@@ -1,9 +1,8 @@
-/**
+/** 
  * Classe SchiavanoDavideClass
  * @author <strong>SchiavanoDavide</strong>
- * <U>4^AI</U>
- * <Italic>04/02/2023</Italic>
- *
+ * <U>4^AI </U>
+ *<italic>04/02/2023</italic>
  */
 public class SchiavanoDavideClass {
 /**
@@ -17,17 +16,31 @@ public SchiavanoDavideClass() {}
  * @return Risultato della produttoriadi tipo intero
  */
 public int schiavanoMet(int s,int f) {
+	/* Il metodo in questa versione (Versione 0) del progetto non calcola nessuna produttoria
+	 * perchè dichiarando la variabile locale intera "r" e inizializzandola a valore 0
+	 * e sommandola a se stessa nel ciclo for succede che il metodo ritorni sempre 0 (0+0=0)
+	 
 int r=0;
 for (int i = 1; i <f; i++) {
 	r=r+r;
 }
+
 return r;
+*/
+	 
+int r=1;
+for (int i = s; i <=f; i++) {
+	r*=i;
+}
+
+return r;
+ 
 }
 	public static void main(String[] args) {
 		SchiavanoDavideClass produttoria =new SchiavanoDavideClass();
 		System.out.println(produttoria.schiavanoMet(5,7));
 		System.out.println(produttoria.schiavanoMet(2,9));
-		System.out.println(produttoria.schiavanoMet(4,19));
+		System.out.println(produttoria.schiavanoMet(4,6));
 	}
 
 }
