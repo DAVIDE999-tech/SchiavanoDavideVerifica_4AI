@@ -2,7 +2,7 @@
  * Classe SchiavanoDavideClass
  * @author <strong>SchiavanoDavide</strong>
  * <U>4^AI </U>
- *<italic>04/02/2023</italic>
+ *<i>04/02/2023</i>
  */
 public class SchiavanoDavideClass {
 /**
